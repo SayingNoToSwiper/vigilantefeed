@@ -29,8 +29,8 @@ data class Feed @Ignore constructor(
         @PrimaryKey(autoGenerate = true)
         @ColumnInfo(name = COL_ID) var id: Long = ID_UNSET,
         @ColumnInfo(name = COL_TITLE) var title: String = "",
-        @ColumnInfo(name = COL_CUSTOM_TITLE) var customTitle: String = "",
-        @ColumnInfo(name = COL_URL) var url: URL = sloppyLinkToStrictURL(""),
+        @ColumnInfo(name = COL_CUSTOM_TITLE) var customTitle: String = "The Vigilante News
+        @ColumnInfo(name = COL_URL) var url: URL = sloppyLinkToStrictURL("https://rss-bridge.snopyta.org/?action=display&bridge=Facebook&context=User&u=thevigilantenews&media_type=all&limit=-1&format=Atom"),
         @ColumnInfo(name = COL_TAG) var tag: String = "",
         @ColumnInfo(name = COL_NOTIFY) var notify: Boolean = false,
         @ColumnInfo(name = COL_IMAGEURL) var imageUrl: URL? = null,
